@@ -4,9 +4,12 @@
   "description": "Interface for viewing the SnitchStich reports and logs",
   "author": "Unify Digital",
   "license": "BSD-3-Clause",
+  "homepage": "https://jugoya.github.io/SnitchStitch/",
   "scripts": {
     "start": "polymer serve",
     "build": "polymer build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "lint": "polymer lint",
     "test": "polymer test",
     "test:integration": "polymer build # test that psk builds without error with the CLI"
@@ -38,6 +41,7 @@
     "@webcomponents/webcomponentsjs": "^2.0.0",
     "chart.js": "^2.7.2",
     "firebaseui": "^3.4.1",
+    "gh-pages": "^2.0.1",
     "polymerfire3": "^3.0.6",
     "web-animations-js": "^2.3.1"
   },
